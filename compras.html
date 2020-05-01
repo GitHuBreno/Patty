@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Patty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Patty Chatbot">
+    <meta name="keywords" content="Chatbot, Patterns, IHC">
+    <meta name="author" content="Thiago-Gama, GitHuBreno">
+    <link rel="shortcut icon" href="imagens/favicon.ico?v=2" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+      df-messenger {
+       --df-messenger-bot-message: #679C94;
+       --df-messenger-button-titlebar-color: #679C94;
+       --df-messenger-chat-background-color: #FFFFFF;
+       --df-messenger-font-color: #FFFFFF;
+       --df-messenger-send-icon: #83CED5;
+       --df-messenger-user-message: #DACC3E;
+      }
+    </style>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="imagens/patty.png"
+      intent="WELCOME"
+      chat-title="Patty"
+      agent-id="9a4b8309-b53e-4b21-b516-a5341860532b"
+      language-code="pt-br"
+    ></df-messenger>
+  </head>
+
+  <body>
+    <header>
+      <div class="title"><h1>Patty</h1></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a id="current">Padrões de Compras</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <div class="grid-container">
+          <article class="grid-item">
+            <h3 class="posttitle">Carrinho de compras</h3>
+            <a href="imagens/img_carrinho_de_compras.png" target="_blank"><img id="img-index" src="imagens/img_carrinho_de_compras.png" alt="img_carrinho_de_compras"/></a>
+            <p>A experiência de compra on-line precisa ser realizada através de uma analogia do mundo real.<br><a id="link" href="padroes/carrinho_de_compras.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/09662803-ab6e-45a0-660f-2316aa181027-7f57/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Carrinho de compras.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Comparador de produtos</h3>
+            <a href="imagens/img_comparador_de_produtos.png" target="_blank"><img id="img-index" src="imagens/img_comparador_de_produtos.png" alt="img_comparador_de_produtos"/></a>
+            <p>Os usuários precisam comparar produtos similares.<br><a id="link" href="padroes/comparador_de_produtos.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/8222f660-9c1b-48c1-41c0-b6d7faade297-f413/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Comparador de produtos.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+          
+          <article class="grid-item">
+            <h3 class="posttitle">Configurador de produto</h3>
+            <a href="imagens/img_configurador_de_produto.png" target="_blank"><img id="img-index" src="imagens/img_configurador_de_produto.png" alt="img_configurador_de_produto"/></a>
+            <p>Os usuários desejam configurar o produto que pretendem comprar.<br><a id="link" href="padroes/configurador_de_produto.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/38b26aea-eaec-4a4f-6860-b9ffba3aad37-4e83/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Configurador de produto.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Consultor de produto</h3>
+            <a href="imagens/img_consultor_de_produto.png" target="_blank"><img id="img-index" src="imagens/img_consultor_de_produto.png" alt="img_consultor_de_produto"/></a>
+            <p>Os usuários desejam conselhos sobre como selecionar o melhor produto para eles entre um conjunto de produtos.<br><a id="link" href="padroes/consultor_de_produto.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/1924afc0-116f-4ba2-6238-a67410beb5b8-6f15/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Consultor de produto.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Cupom</h3>
+            <a href="imagens/img_cupom.png" target="_blank"><img id="img-index" src="imagens/img_cupom.png" alt="img_cupom"/></a>
+            <p>Você deseja atrair usuários para comprar produtos usando um incentivo.<br><a id="link" href="padroes/cupom.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/b23c0726-b2c5-4fdc-6f67-edd52b12b7c9-c40d/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Cupom.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Depoimentos</h3>
+            <a href="imagens/img_depoimentos.png" target="_blank"><img id="img-index" src="imagens/img_depoimentos.png" alt="img_depoimentos"/></a>
+            <p>Os usuários desejam obter informações sobre a qualidade do produto desejado e/ou a confiabilidade do fornecedor.<br><a id="link" href="padroes/depoimentos.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/8c085803-46a9-419b-5c93-ce35426323aa-fa39/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Depoimentos.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Indicar a um amigo</h3>
+            <a href="imagens/img_indicar_a_um_amigo.png" target="_blank"><img id="img-index" src="imagens/img_indicar_a_um_amigo.png" alt="img_indicar_a_um_amigo"/></a>
+            <p>O usuário deseja compartilhar algo de interesse com um colega.<br><a id="link" href="padroes/indicar_a_um_amigo.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/ae38d677-3b62-4139-4f59-49a0a8bd540f-d809/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Indicar a um amigo.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Localizador de lojas</h3>
+            <a href="imagens/img_localizador_de_lojas.png" target="_blank"><img id="img-index" src="imagens/img_localizador_de_lojas.png" alt="img_localizador_de_lojas"/></a>
+            <p>Os usuários precisam encontrar uma loja (física) perto de um local específico.<br><a id="link" href="padroes/localizador_de_lojas.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/e8377cbd-ae6a-48bd-4810-99dbb003ddd7-9e06/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Localizador de lojas.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Página do produto</h3>
+            <a href="imagens/img_pagina_do_produto.png" target="_blank"><img id="img-index" src="imagens/img_pagina_do_produto.png" alt="img_pagina_do_produto"/></a>
+            <p>O usuário precisa saber detalhes sobre um produto para tomar uma decisão de compra.<br><a id="link" href="padroes/pagina_do_produto.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/500d68a2-4999-44cf-5d79-886138f4c0f1-263c/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Página do produto.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Processo de compra</h3>
+            <a href="imagens/img_processo_de_compra.png" target="_blank"><img id="img-index" src="imagens/img_processo_de_compra.png" alt="img_processo_de_compra"/></a>
+            <p>Os usuários desejam comprar um produto já selecionado.<br><a id="link" href="padroes/processo_de_compra.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/0c3b8e99-7e41-4338-6bdd-d3069facac28-7a0a/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Processo de compra.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Reserva</h3>
+            <a href="imagens/img_reserva.png" target="_blank"><img id="img-index" src="imagens/img_reserva.png" alt="img_reserva"/></a>
+            <p>Os usuários desejam reservar um voo/hotel/carro/...<br><a id="link" href="padroes/reserva.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/d39c7529-f3cb-49da-50b0-70390702409f-a5ad/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Reserva.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="posttitle">Tabela de preços</h3>
+            <a href="imagens/img_tabela_de_precos.png" target="_blank"><img id="img-index" src="imagens/img_tabela_de_precos.png" alt="img_tabela_de_precos"/></a>
+            <p>O usuário precisa ter uma visão geral de quais planos de preços são oferecidos e como eles diferem.<br><a id="link" href="padroes/tabela_de_precos.html"><u>Ler mais...</u></a></p>
+            <span class="publication"><a href="https://xd.adobe.com/view/53233d6d-8418-45bb-6fc0-c70fe1f55885-2512/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+            <a class="button" href="xd/Tabela de preços.xd" style="text-decoration:none">BAIXAR</a>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2020 Patty – Universidade Estadual do Ceará (UECE)</p>
+    </footer>
+  </body>
+</html>

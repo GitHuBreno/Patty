@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Patty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Patty Chatbot">
+    <meta name="keywords" content="Chatbot, Patterns, IHC">
+    <meta name="author" content="Thiago-Gama, GitHuBreno">
+    <link rel="shortcut icon" href="imagens/favicon.ico?v=2" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+      df-messenger {
+       --df-messenger-bot-message: #679C94;
+       --df-messenger-button-titlebar-color: #679C94;
+       --df-messenger-chat-background-color: #FFFFFF;
+       --df-messenger-font-color: #FFFFFF;
+       --df-messenger-send-icon: #83CED5;
+       --df-messenger-user-message: #DACC3E;
+      }
+    </style>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="imagens/patty.png"
+      intent="WELCOME"
+      chat-title="Patty"
+      expand="true"
+      agent-id="9a4b8309-b53e-4b21-b516-a5341860532b"
+      language-code="pt-br"
+    ></df-messenger>
+  </head>
+
+  <body>
+    <header>
+      <div class="title"><h1>Patty</h1></div>
+      <nav class="menu">
+        <ul>
+          <li><a id="current">Início</a></li>
+          <li><a href="compras.html">Padrões de Compras</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="index-page">
+        <article class="index-page">
+          <h4>Patty – Agente conversacional de consulta de padrões de design de interface do usuário</h4>
+          <br>
+          <h5><b id="bold">Padrões de compras disponibilizados:</b></h5>
+          <ol class="index-page" id="index-page">
+            <li><a id="link" href="padroes/carrinho_de_compras.html">Carrinho de compras</a></li>
+            <li><a id="link" href="padroes/comparador_de_produtos.html">Comparador de produtos</a></li>
+            <li><a id="link" href="padroes/configurador_de_produto.html">Configurador de produto</a></li>
+            <li><a id="link" href="padroes/consultor_de_produto.html">Consultor de produto</a></li>
+            <li><a id="link" href="padroes/cupom.html">Cupom</a></li>
+            <li><a id="link" href="padroes/depoimentos.html">Depoimentos</a></li>
+            <li><a id="link" href="padroes/indicar_a_um_amigo.html">Indicar a um amigo</a></li>
+            <li><a id="link" href="padroes/localizador_de_lojas.html">Localizador de lojas</a></li>
+            <li><a id="link" href="padroes/pagina_do_produto.html">Página do produto</a></li>
+            <li><a id="link" href="padroes/processo_de_compra.html">Processo de compra</a></li>
+            <li><a id="link" href="padroes/reserva.html">Reserva</a></li>
+            <li><a id="link" href="padroes/tabela_de_precos.html">Tabela de preços</a></li>
+          </ol>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2020 Patty – Universidade Estadual do Ceará (UECE)</p>
+    </footer>
+  </body>
+</html>
