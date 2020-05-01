@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="../imagens/favicon.ico?v=2" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patty</title>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <!-- <script src="../js/script.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+  </head>
+  <body>
+    <header>
+      <div class="title"><h1>Patty</h1></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <article class="p-pattern">
+          <h3 class="posttitle">Consultor de produto</h3>
+          <p id="caption">Exemplo do padrão consultor de produto.</p>
+          <a href="../imagens/img_consultor_de_produto.png" target="_blank"><img id="img-pattern" src="../imagens/img_consultor_de_produto.png" alt="img_consultor_de_produto"/></a>
+          <h2>Informações</h2>
+          <button type="button" class="collapsible">Resumo do Problema</button>
+          <div class="content">
+            <p id="content">
+              Os usuários desejam conselhos sobre como selecionar o melhor produto para eles entre um conjunto de produtos.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Solução</button>
+          <div class="content">
+            <p id="content">
+              Aconselhar os utilizadores sobre produtos com base em restrições, preferências e necessidades usuários têm.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Como Usar</button>
+          <div class="content">
+            <p id="content">
+              O site tem produtos à venda, on-line ou off-line. O conjunto de produtos disponíveis geralmente é de médio a grande porte, por exemplo, 15 ou mais produtos, para que a seleção do produto apropriado se torne não trivial. Os usuários podem variar de iniciantes a usuários experientes.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Como Usar</button>
+          <div class="content">
+            <p id="content">
+              O fluxo de tarefas básico é o seguinte:
+            </p>
+            <p><ul id="content">
+              <li>Descreva as necessidades, o que você deseja fazer?</li>
+              <li>Descreva as preferências, o que deveria ter?</li>
+              <li>Descreva as restrições, o que deve ser levado em consideração?</li>
+              <li>Receba recomendações.</li>
+              <li>Revise as necessidades, preferências ou restrições, se necessário.</li>
+              <li>Aja sob recomendação.</li>
+              </ul></p>
+              <p id="content">
+                A estrutura do Consultor de produto é um assistente adaptado. O orientador possui um conjunto limitado de etapas em que os usuários fornecem todas as entradas agrupadas por tópico/aspecto. A etapa final é onde as recomendações são fornecidas de maneira semelhante à dos resultados normais da pesquisa. Opcionalmente, uma outra etapa pode ser adicionada para comprar o produto selecionado ou enviar mais informações sobre o produto.
+              </p>
+              <p id="content">
+                Nas primeiras etapas do orientador, os usuários dão entrada configurando uma ou mais das opções disponíveis. Isso pode ser bastante complicado e requer alto conhecimento dos usuários. Quais opções são apresentadas em uma etapa específica podem depender de escolhas anteriores. Quando as opções não dependem uma da outra, podem ser usadas guias. Caso contrário, um design mais baseado em etapas deve ser usado para que os usuários possam ver todas as etapas o tempo todo. Quando os resultados são fornecidos, os usuários devem poder voltar e revisar suas decisões para fazer uma análise hipotética.
+              </p>
+              <p id="content">
+                Ao exibir resultados, é importante criar um alto nível de confiança nos conselhos reais. Dar uma porcentagem é uma maneira de fazer isso, por exemplo, 100% pode significar que ela cumpre todas as suas preferências. Outras possibilidades é tornar visível como a decisão foi tomada, por exemplo, usando uma matriz com as opções possíveis.
+              </p>
+          </div>
+          <button type="button" class="collapsible">Justificativa</button>
+          <div class="content">
+            <p id="content">
+              O aconselhamento ocorre como uma conversa em que o consultor faz várias perguntas antes de dar conselhos.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Mais exemplos</button>
+          <div class="content">
+            <p id="content">
+              Este consultor da <i id="italic">National Instruments</i> ainda permite que os usuários salve suas recomendações, imprima-as ou obtenha um contrato para o produto selecionado.
+            </p>
+            <p id="content">
+              Goretex possui um consultor muito simples, onde os produtos são selecionados por finalidade.
+            </p>
+          </div>
+          </p>
+          <span class="publication"><a href="https://xd.adobe.com/view/1924afc0-116f-4ba2-6238-a67410beb5b8-6f15/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+          <a class="button" href="../xd/Consultor de produto.xd" style="text-decoration:none">BAIXAR</a>
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+      
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+          </script>
+        </article>
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <h2 class="sidebar-item-header">Lista de padrões</h2>
+            <ul class="sidebar-item-menu">
+              <li><a href="../padroes/carrinho_de_compras.html">Carrinho de compras</a></li>
+              <li><a href="../padroes/comparador_de_produtos.html">Comparador de produtos</a></li>
+              <li><a href="../padroes/configurador_de_produto.html">Configurador de produto</a></li>
+              <li><a id="current">Consultor de produto</a></li>
+              <li><a href="../padroes/cupom.html">Cupom</a></li>
+              <li><a href="../padroes/depoimentos.html">Depoimentos</a></li>
+              <li><a href="../padroes/indicar_a_um_amigo.html">Indicar a um amigo</a></li>
+              <li><a href="../padroes/localizador_de_lojas.html">Localizador de lojas</a></li>
+              <li><a href="../padroes/pagina_do_produto.html">Página do produto</a></li>
+              <li><a href="../padroes/processo_de_compra.html">Processo de compra</a></li>
+              <li><a href="../padroes/reserva.html">Reserva</a></li>
+              <li><a href="../padroes/tabela_de_precos.html">Tabela de preços</a></li>
+            </ul>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p>
+        Copyright &copy; 2020 Patty – Universidade Estadual do Ceará (UECE)
+      </p>
+    </footer>
+  </body>
+</html>

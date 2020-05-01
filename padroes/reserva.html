@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="../imagens/favicon.ico?v=2" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patty</title>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <!-- <script src="../js/script.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+  </head>
+  <body>
+    <header>
+      <div class="title"><h1>Patty</h1></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <article class="p-pattern">
+          <h3 class="posttitle">Reserva</h3>
+          <p id="caption">Exemplo do padrão reserva.</p>
+          <a href="../imagens/img_reserva.png" target="_blank"><img id="img-pattern" src="../imagens/img_reserva.png" alt="img_reserva"/></a>
+          <h2>Informações</h2>
+          <button type="button" class="collapsible">Resumo do Problema</button>
+          <div class="content">
+            <p id="content">
+              Os usuários desejam reservar um voo/hotel/carro/...
+            </p>
+          </div>
+          <button type="button" class="collapsible">Solução</button>
+          <div class="content">
+            <p id="content">
+              Permita que os usuários pesquisem o "objeto" de maneira flexível, principalmente em relação à data/hora versus preço. Em seguida, permita que isso faça a reserva real.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Como Usar</button>
+          <div class="content">
+            <p id="content">
+              Normalmente usado no site de viagens ou no site de comércio eletrônico. Na página inicial desses sites...
+            </p>
+          </div>
+          <button type="button" class="collapsible">Uso</button>
+          <div class="content">
+            <p><ul id="content">
+              <li>Use quando o usuário puder comprar mais de um produto.</li>
+              <li>Use quando o usuário puder comprar mais de uma instância de um produto.</li>
+              <li>Use quando o usuário desejar retornar mais tarde para continuar comprando.</li>
+              <li>Use quando o usuário desejar retornar posteriormente para realizar o pagamento.</li>
+              <li>Não use quando você tiver apenas um produto para vender.</li>
+              <li>Não use quando o site estiver organizado de uma forma, para que não faça sentido para o usuário comprar mais de um produto por vez 
+                (por exemplo, para ASPs (<i id="italic">Application Service Providers</i>), permitindo que o usuário atualize seu serviço).</li>
+            </ul></p>
+          </div>
+          <button type="button" class="collapsible">Como Usar</button>
+          <div class="content">
+            <p id="content">
+              A reserva de um voo/carro/férias é uma estrutura muito semelhante a outras atividades de compra ou compra on-line. Consiste em duas etapas de alto nível:
+            </p>
+            <p><ul id="content">
+              <li>Determinando o item para reservar/comprar usando um processo semelhante a uma pesquisa.</li>
+              <li>Passando pelo processo de compra dos itens selecionados.</li>
+            </ul></p>
+            <p id="content">
+              A parte mais complicada da reserva é a busca e a seleção do item. Em muitos casos, como em um site de viagens , você encontrará uma caixa contendo algumas variações na Pesquisa avançada na página inicial . Veja o exemplo acima da Expedia. Esse formulário é o início de uma série de etapas que os usuários devem seguir usando um Assistente:
+            </p>
+            <p id="content">
+              As etapas básicas são:
+            </p>
+            <p><ul id="content">
+              <li><b id="bold">Seleção inicial:</b> Os usuários podem restringir suas preferências por datas, preços, tipo de tarifa (se aplicável), tipo de transporte e número de pessoas.</li>
+              <li><b id="bold">Realize uma pesquisa no banco de dados:</b> Os usuários verão uma Página de Processamento enquanto o sistema estiver pesquisando, porque geralmente leva muito tempo para que a pesquisa seja concluída.</li>
+              <li><b id="bold">Mostre os resultados:</b> Os resultados são basicamente um caso especial de Resultados da Pesquisa. O principal problema aqui é como lidar com a combinação de datas e preços. Uma abordagem é pesquisar principalmente a data ou o preço conforme o usuário solicitar. Outra abordagem não é pedir ao usuário o tipo de pesquisa definido primeiro, mas sim combinar preço e datas. Principalmente os resultados são classificados por data, mas com uma indicação dos preços. Por exemplo, usando código de cores. Veja o exemplo da <i id="italic">British Airways</i> abaixo. Limite primeiro as datas e depois os preços. Existem várias maneiras de lidar com a combinação de preços e datas, por exemplo, usando vistas de um ou calendário com código de cores.</li>
+              <li><b id="bold">Ver seleção:</b> Opcionalmente, dê um passo atrás. Veja a data, hora, preço, números de voo, etc.</li>
+              <li><b id="bold">Realizar a compra:</b> O restante é apenas um processo de compra, assim como ao usar um carrinho de compras.</li>
+            </ul></p>
+          </div>
+          <button type="button" class="collapsible">Justificativa</button>
+          <div class="content">
+            <p id="content">
+              A combinação de preço e "ajuste" às datas ou preferências solicitadas é a base sobre a qual os usuários precisam tomar uma decisão. Principalmente, eles querem um ajuste exato ao pedido com o menor preço possível. Como esse raramente é o caso, eles devem equilibrar as outras opções. Como visualizar isso é um problema difícil e ainda não se sabe qual é a melhor solução, pelo menos ainda.
+            </p>
+          </div>
+          </p>
+          <span class="publication"><a href="https://xd.adobe.com/view/d39c7529-f3cb-49da-50b0-70390702409f-a5ad/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+          <a class="button" href="../xd/Reserva.xd" style="text-decoration:none">BAIXAR</a>
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+      
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+          </script>
+        </article>
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <h2 class="sidebar-item-header">Lista de padrões</h2>
+            <ul class="sidebar-item-menu">
+              <li><a href="../padroes/carrinho_de_compras.html">Carrinho de compras</a></li>
+              <li><a href="../padroes/comparador_de_produtos.html">Comparador de produtos</a></li>
+              <li><a href="../padroes/configurador_de_produto.html">Configurador de produto</a></li>
+              <li><a href="../padroes/consultor_de_produto.html">Consultor de produto</a></li>
+              <li><a href="../padroes/cupom.html">Cupom</a></li>
+              <li><a href="../padroes/depoimentos.html">Depoimentos</a></li>
+              <li><a href="../padroes/indicar_a_um_amigo.html">Indicar a um amigo</a></li>
+              <li><a href="../padroes/localizador_de_lojas.html">Localizador de lojas</a></li>
+              <li><a href="../padroes/pagina_do_produto.html">Página do produto</a></li>
+              <li><a href="../padroes/processo_de_compra.html">Processo de compra</a></li>
+              <li><a id="current">Reserva</a></li>
+              <li><a href="../padroes/tabela_de_precos.html">Tabela de preços</a></li>
+            </ul>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p>
+        Copyright &copy; 2020 Patty – Universidade Estadual do Ceará (UECE)
+      </p>
+    </footer>
+  </body>
+</html>
