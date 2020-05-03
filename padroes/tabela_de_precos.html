@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="../imagens/favicon.ico?v=2" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patty</title>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <!-- <script src="../js/script.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+  </head>
+  <body>
+    <header>
+      <div class="title"><h1>Patty</h1></div>
+      <nav class="menu">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <article class="p-pattern">
+          <h3 class="posttitle">Tabela de preços</h3>
+          <p id="caption">Exemplo do padrão tabela de preços.</p>
+          <a href="../imagens/img_tabela_de_precos.png" target="_blank"><img id="img-pattern" src="../imagens/img_tabela_de_precos.png" alt="img_tabela_de_precos"/></a>
+          <h2>Informações</h2>
+          <button type="button" class="collapsible">Resumo do Problema</button>
+          <div class="content">
+            <p id="content">
+              O usuário precisa ter uma visão geral de quais planos de preços são oferecidos e como eles diferem.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Uso</button>
+          <div class="content">
+            <p><ul id="content">
+              <li>Use quando houver mais de uma versão de um produto para escolher entre.</li>
+              <li>Use quando desejar fornecer ao usuário uma visão geral de como as versões dos produtos 
+                diferem em termos de recursos e preço.</li>
+              <li>Não use quando o usuário puder comprar mais de um produto por vez.</li>
+              <li>Não use quando o usuário puder decidir quais produtos ele deseja comprar em uma sessão 
+                e retornar mais tarde para <a id="link" href="../padroes/processo_de_compra.html" target="_blank"><u>realizar o pagamento real</u></a>.</li>
+            </ul></p>
+          </div>
+          <button type="button" class="collapsible">Solução</button>
+          <div class="content">
+            <p id="content">
+              As tabelas de preços são usadas como uma maneira de ilustrar como os recursos de um produto diferem 
+              conforme o preço muda.
+            </p>
+            <p id="content">
+              Exiba a versão diferente de um produto em uma tabela, alinhando preço e recursos para comparação.
+            </p>
+            <p id="content">
+              Uma lista das perguntas mais frequentes (FAQ) sobre o produto é frequentemente listada diretamente abaixo 
+              da tabela de preços. Elas geralmente tratam de questões com as quais os clientes em potencial normalmente se preocupam: como funciona o plano gratuito, existe uma garantia de devolução do dinheiro, como serei cobrado etc.
+            </p>
+            <p id="content">
+              É uma parte muito comum dos sites de marketing de <i id="italic">Application Service Providers</i> 
+              (ASPs). Na maioria dos casos, esses produtos possuem apenas um produto importante, mas oferecem 
+              esse produto em diferentes variantes (planos). Nesses sites, o preço geralmente é baseado em um 
+              plano de assinatura mensal/trimestral/anual.
+            </p>
+            <p id="content">
+              Ao criar sua tabela de preços, é bom considerar os seguintes pontos:
+              <p><ul id="content">
+                <li>Separe visualmente os planos usando cores de fundo alternadas. Quando usado com 
+                  moderação, você pode atrair a atenção do plano que deseja que o usuário compre.</li>
+                <li>Utilize diferentes tamanhos e cores de fontes para os elementos que você deseja 
+                  destacar: títulos, preços, títulos, etc.</li>
+                <li>Esteja ciente de que os usuários rolam para baixo em tabelas longas. Os preços na 
+                  parte superior de uma tabela podem não estar visíveis quando atingem o fundo. Uma 
+                  solução é colocar os preços na parte superior e inferior ou outra é manter a tabela 
+                  de preços curta.</li>
+              </ul></p>
+            </p>
+          </div>
+          <button type="button" class="collapsible">Fundamentação</button>
+          <div class="content">
+            <p id="content">
+              Converter visitantes interessados ​​em clientes pagantes é o seu maior objetivo. Use tabelas de preços 
+              para ilustrar do que o seu produto é capaz de fornecer e ao mesmo tempo atraí-lo.
+            </p>
+          </div>
+          </p>
+          <span class="publication"><a href="https://xd.adobe.com/view/53233d6d-8418-45bb-6fc0-c70fe1f55885-2512/" target="_blank" style="text-decoration:none">SIMULAR</a></span>
+          <a class="button" href="../xd/Tabela de preços.xd" style="text-decoration:none">BAIXAR</a>
+          <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+      
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+          </script>
+        </article>
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <h2 class="sidebar-item-header">Lista de padrões</h2>
+            <ul class="sidebar-item-menu">
+              <li><a href="../padroes/carrinho_de_compras.html">Carrinho de compras</a></li>
+              <li><a href="../padroes/comparador_de_produtos.html">Comparador de produtos</a></li>
+              <li><a href="../padroes/configurador_de_produto.html">Configurador de produto</a></li>
+              <li><a href="../padroes/consultor_de_produto.html">Consultor de produto</a></li>
+              <li><a href="../padroes/cupom.html">Cupom</a></li>
+              <li><a href="../padroes/depoimentos.html">Depoimentos</a></li>
+              <li><a href="../padroes/indicar_a_um_amigo.html">Indicar a um amigo</a></li>
+              <li><a href="../padroes/localizador_de_lojas.html">Localizador de lojas</a></li>
+              <li><a href="../padroes/pagina_do_produto.html">Página do produto</a></li>
+              <li><a href="../padroes/processo_de_compra.html">Processo de compra</a></li>
+              <li><a href="../padroes/reserva.html">Reserva</a></li>
+              <li><a id="current">Tabela de preços</a></li>
+            </ul>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <p>
+        Copyright &copy; 2020 Patty – Universidade Estadual do Ceará (UECE)
+      </p>
+    </footer>
+  </body>
+</html>
