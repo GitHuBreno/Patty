@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patty</title>
     <link href="../css/style.css" rel="stylesheet"/>
-    <!-- <script src="../js/script.js" type="text/javascript"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"/>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+      df-messenger {
+       --df-messenger-bot-message: #679C94;
+       --df-messenger-button-titlebar-color: #679C94;
+       --df-messenger-chat-background-color: #FFFFFF;
+       --df-messenger-font-color: #FFFFFF;
+       --df-messenger-send-icon: #83CED5;
+       --df-messenger-user-message: #DACC3E;
+      }
+    </style>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="../imagens/patty.png"
+      intent="WELCOME"
+      chat-title="Patty"
+      agent-id="9a4b8309-b53e-4b21-b516-a5341860532b"
+      language-code="pt-br"
+    ></df-messenger>
   </head>
   <body>
     <header>
@@ -106,26 +124,7 @@
               });
             }
           </script>
-        </article>
-        <div class="sidebar">
-          <div class="sidebar-item">
-            <h2 class="sidebar-item-header">Lista de padrões</h2>
-            <ul class="sidebar-item-menu">
-              <li><a href="../padroes/carrinho_de_compras.html">Carrinho de compras</a></li>
-              <li><a href="../padroes/comparador_de_produtos.html">Comparador de produtos</a></li>
-              <li><a href="../padroes/configurador_de_produto.html">Configurador de produto</a></li>
-              <li><a href="../padroes/consultor_de_produto.html">Consultor de produto</a></li>
-              <li><a href="../padroes/cupom.html">Cupom</a></li>
-              <li><a href="../padroes/depoimentos.html">Depoimentos</a></li>
-              <li><a href="../padroes/indicar_a_um_amigo.html">Indicar a um amigo</a></li>
-              <li><a id="current">Localizador de lojas</a></li>
-              <li><a href="../padroes/pagina_do_produto.html">Página do produto</a></li>
-              <li><a href="../padroes/processo_de_compra.html">Processo de compra</a></li>
-              <li><a href="../padroes/reserva.html">Reserva</a></li>
-              <li><a href="../padroes/tabela_de_precos.html">Tabela de preços</a></li>
-            </ul>
-          </div>
-        </div>
+        </article>        
     </main>
     <footer>
       <p>
